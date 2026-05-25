@@ -1,0 +1,440 @@
+.navbar .navbar-nav .nav-link {
+ padding: 10px 15px;
+ font-size: 20px;
+ transition: .5s;
+}
+
+
+.navbar{
+ background-color: #08c495 !important;
+}
+.nav-link{
+ color: #4d6560 !important;
+
+}
+.nav-link:hover{
+ color: #fff!important;
+}
+.active{
+ color: #fff!important;
+}
+
+
+
+.dropend .dropdown-menu {
+  display: none;       /* sakrij podmeni po defaultu */
+  position: absolute;
+  top: 0;
+  left: 100%;          /* otvara se desno od roditeljskog linka */
+  min-width: 180px;
+}
+
+@media (hover: hover) {
+  .dropend:hover > .dropdown-menu {
+    display: block;    /* pokaži podmeni kada hover */
+  }
+}
+
+.dropend > .dropdown-toggle::after {
+  content: "▶";
+  float: right;
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+.futercina {
+ background-color: #435353 ; /* Tamno siva-zelena boja pozadine */
+ color: #ffffff; /* Bela boja teksta */
+ padding: 60px 20px;
+ font-family: Arial, sans-serif;
+}
+footer a {
+ color: #4fc4e7; /* Svetlo zelena za linkove */
+ text-decoration: none;
+ margin: 5px 0;
+ display: block;
+}   
+footer a:hover {
+ text-decoration: none;
+}
+footer h1{
+ font-weight: bolder;
+}
+footer h1, footer h4 {
+ color: #4fc4e7; /* Svetlo zelena boja za naslove */
+ margin-bottom: 15px;
+}
+.footer-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.footer-left {
+ text-align: center;
+ margin-bottom: 30px;
+}
+.footer-subscribe {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #ffffff;
+ padding: 5px;
+ border-radius: 30px;
+ max-width: 400px;
+ margin: 20px auto;
+}
+.footer-subscribe input[type="email"] {
+ border: none;
+ padding: 10px;
+ flex: 1;
+ border-radius: 20px 0 0 20px;
+ outline: none;
+}
+.footer-subscribe button {
+ background-color: #4fc4e7;
+ border: none;
+ color: #ffffff;
+ padding: 10px 20px;
+ border-radius: 0 20px 20px 0;
+ cursor: pointer;
+}
+.footer-subscribe button:hover {
+ background-color: #4fc4e7;
+}
+.footer-columns {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ width: 100%;
+ max-width: 1200px;
+ margin-bottom: 30px;
+}
+.footer-column {
+ flex: 1;
+ margin: 10px;
+ min-width: 200px;
+
+}
+.footer-column h4 {
+ border-bottom: 1px solid #4fc4e7;
+ padding-bottom: 10px;
+ margin-bottom: 15px;
+}
+.footer-column p {
+ margin-bottom: 10px;
+}
+.footer-social {
+ text-align: center;
+ margin-top: 20px;
+}
+.social-links {
+ display: flex;
+ gap: 15px;
+ justify-content: center;
+}
+.social-links a {
+ background-color: #4fc4e7;
+ padding: 10px;
+ border-radius: 50%;
+ text-align: center;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #ffffff;
+ font-weight: bold;
+}
+.social-links a:hover {
+ background-color: #4fc4e7;
+}
+.payment-options img {
+ width: 150px; /* Prilagodjena širina za slike načina plaćanja */
+ margin-top: 10px;
+}
+
+
+
+
+.copyright {
+    text-align: center;
+}
+
+
+
+
+#hero-section {
+background-color: #cccccc;
+  padding-top: 40px;
+  padding-bottom: 0px; /* <-- uklanja prazninu ispod */
+  margin-bottom: 0px;
+}
+
+
+#hero-section2 {
+background-color: #e6e5e5; /* Svetlo siva boja pozadine */
+padding: 60px 0;
+
+}
+
+
+
+.organic-label {
+color: #31bee9; /* Narandžasta boja za oznaku "100% Organic Foods" */
+font-weight: bold;
+font-size: 2rem;
+}
+.hero-title {
+color: #0844c4; /* Svetlo zelena boja naslova */
+font-size: 3rem;
+font-weight: bold;
+margin-top: 15px;
+}
+.carousel {
+margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+
+
+
+.carousel-inner {
+  height: 450px;
+  margin-bottom: 0 !important;
+  background-color: transparent !important;
+}
+
+
+
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+}
+
+.carousel-item {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+
+
+
+
+.carousel-inner img {
+object-fit: cover;
+height: 100%; /* Prilagodi visinu slajdera */ 
+width: 100%;
+
+}
+.carousel-caption {
+position: absolute;
+
+background-color: rgba(95, 132, 255, 0.8); /* Poluprovidna narandžasta */
+padding: 2px 2px;
+border-radius: 10px;
+color: #fff;
+font-weight: bold;
+font-size: xx-large;
+width: auto; /* Umesto da zauzima celu širinu, neka se prilagodi tekstu */
+white-space: nowrap; /* Sprečava prelazak teksta u novi red */
+}
+.carousel-control-prev,
+.carousel-control-next {
+top: 50%;
+transform: translateY(-50%);
+height: 100%;
+z-index: 10;
+  
+
+}
+
+
+
+
+
+.btn-success{
+background-color: #007753;
+color: #f9f9f5;
+}
+.btn-success:hover{
+background-color: #4d6560;
+color: #f9f9f5;
+border: #4fc4e7;
+}
+section {
+margin-top: 2rem;
+}
+.portfolio{
+background-color:#f9f9f5 !important ;
+}
+.card{
+background-color: #f9f9f5;
+}
+
+
+
+
+
+.carousel-item img {
+opacity: 0;
+transition: opacity 1s ease-in-out; /* Kontrola trajanja i tipa tranzicije */
+}
+.carousel-item.active img {
+opacity: 1; /* Kada je aktivna, slika postaje potpuno vidljiva */
+}
+
+
+
+
+
+
+.organic-label span {
+opacity: 0; /* Sakriva svaki span na početku */
+transform: translateY(10px); /* Postavlja lagani pomak prema dole za efekat */
+display: inline-block;
+animation: fadeInUp 0.5s forwards;
+}
+/* Animacija */
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+/* Kašnjenje za svaki span */
+.organic-label span:nth-child(1) {
+animation-delay: 0s;
+}
+.organic-label span:nth-child(2) {
+animation-delay: 0.2s;
+}
+.organic-label span:nth-child(3) {
+animation-delay: 0.4s;
+}
+.organic-label span:nth-child(4) {
+animation-delay: 0.6s;
+}
+.organic-label span:nth-child(5) {
+animation-delay: 0.8s;
+}
+
+
+
+
+/*galerija*/
+.photo-gallery {
+color:#313437;
+background-color:#fff;
+}
+.photo-gallery .photos {
+padding-bottom:20px;
+}
+.photo-gallery .item {
+padding-bottom:30px;
+}
+
+
+
+
+/*FAQ*/
+.accordion-item{
+    background-color: #08c495;
+    color: #fff;
+}
+.accordion-button{
+    background-color: #007753;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+
+
+/*Mapa sajta*/
+
+.boja{
+    color: #08c495 !important;
+    text-decoration: none;
+ }
+
+
+
+ .map-container {
+ width: 100%;
+ height: 500px; /* Početna visina - može se prilagoditi */
+ }
+ @media (min-width: 768px) {
+ .map-container {
+ height: 700px; /* Povećanje visine za veće ekrane */
+ }
+ }
+
+
+
+/* Kartice za preporučene proizvode */
+.product-card {
+  margin-bottom: 20px;
+}
+
+.product-card .card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+
+/* Hover efekat na karticu */
+.product-card .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Smanjene slike */
+.product-card .card-img-top {
+  height: 150px;  /* manja visina */
+  object-fit: contain; /* slike se ne deformišu */
+  padding: 10px;  /* malo prostora oko slike */
+}
+
+/* Naslov proizvoda */
+.product-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Tekst u kartici */
+.product-card .card-text {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* Dugme "Poruči" */
+.product-card .btn {
+  font-size: 0.875rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+
+
