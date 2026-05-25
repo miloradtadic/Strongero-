@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Strongero je prodavnica suplemenata i opereme za trening.
+Nudimo širok asortiman usluga koje obuhvataju prodaju opreme i suplemenata">
+ <meta name="keywords" content="Suplementi i oprema za trening">
+ <meta name="author" content="Ime i prezime, e-mail">
+ <link rel="stylesheet" href="css/lightbox.min.css">
+ <title>Strongero</title>
+ <link href="./css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/novistil.css">
+ <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+ <script src="./js/bootstrap.bundle.min.js" ></script>
+ <script src="./fontawesome/js/all.min.js"></script>
+ </head>
+
+
+ <body>
+<!-- Nav start -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+ <div class="container-fluid">
+ <a class="navbar-brand" href="index.html" alt=""> <img class="imgthumbnail" src="./img/images.png" width="100"></a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse"
+id="navbarSupportedContent">
+ <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ <li class="nav-item">
+ <a class="nav-link active" aria-current="page"
+href="index.html">Početna</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="onama.html">O nama</a>
+ </li>
+ 
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button"
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Prodavnica
+  </a>
+  <ul class="dropdown-menu">
+    <!-- Suplementi sa podmenijem -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">Suplementi</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="proteini.html">Protein</a></li>
+        <li><a class="dropdown-item" href="kreatin.html">Kreatin</a></li>
+        <li><a class="dropdown-item" href="bcaa.html">Ostali suplementi</a></li>
+      </ul>
+    </li>
+
+    <li><a class="dropdown-item" href="tegovi.html">Tegovi</a></li>
+    <li><a class="dropdown-item" href="opremaBoks.html">Oprema za boks</a></li>
+    <li><a class="dropdown-item" href="opremaTrcanje.html">Oprema za trčanje</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="dodatnaOprema.html">Dodatna oprema</a></li>
+    <li><a class="dropdown-item" href="preporukaProizvoda.html">Preporuka proizvoda</a></li>
+    <li><a class="dropdown-item" href="Cenovnik.pdf" download="">Cenovnik</a></li>
+  </ul>
+</li>
+
+
+
+ <li class="nav-item">
+ <a class="nav-link" href="galerija.html">Galerija</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="kontakt.html">Kontakt</a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      let submenu = el.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+
+      // zatvori ostale otvorene podmenije
+      el.closest('.dropdown-menu').querySelectorAll('.dropdown-menu.show').forEach(function(openSubmenu) {
+        if(openSubmenu !== submenu) openSubmenu.classList.remove('show');
+      });
+    });
+  });
+});
+</script>
+
+
+ <!-- Nav end -->
+
+
+ 
+
+ 
+ </body>
+
+ <!-- sekcija1 start -->
+ <section id="hero-section">
+ <div class="container">
+ <div class="row align-items-center">
+ <div class="col-md-6">
+ <h5 class="organic-label">Najbolji suplementi </h5>
+ <h1 class="hero-title">Najkvalitetnija oprema</h1>
+ </div>
+ <div class="col-md-6">
+ <div id="productCarousel" class="carousel slide product-slider" data-bs-ride="carousel">
+ <div class="carousel-inner">
+ <div class="carousel-item active">
+ <img src="./img/suplementi2.jpg" class="d-block
+ w-100 rounded" alt="Suplementi">
+ <div class="carousel-caption">
+ <span class="productlabel">Suplementi</span>
+ </div>
+ </div>
+ <div class="carousel-item">
+ <img src="./img/oprema2.jpg" class="d-block w-100 rounded" alt="Oprema">
+ <div class="carousel-caption">
+ <span class="product-label">Oprema</span>
+ </div>
+ </div>
+ </div>
+ <button class="carousel-control-prev" type="button"
+ data-bs-target="#productCarousel" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon" ariahidden="true"></span>
+ <span class="visually-hidden">Previous</span>
+ </button>
+ <button class="carousel-control-next" type="button"
+ data-bs-target="#productCarousel" data-bs-slide="next">
+ <span class="carousel-control-next-icon" ariahidden="true"></span>
+ <span class="visually-hidden">Next</span>
+ </button>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+ <!-- sekcija1 end -->
+
+ <!-- sekcija2 start -->
+ <section id="hero-section2" >
+ <div class="container">
+<div class="row align-items-stretch g-4">
+  <div class="col-4">
+    <div class="card h-100 d-flex flex-column">
+      <img src="img/slika4.jpg" class="card-img-top" alt="Proteini" style="width: 100%; height: 250px; object-fit: cover;">
+      <div class="card-body d-flex flex-column">
+        <h5 class="organic-label">Proteini</h5>
+        <p class="card-text flex-grow-1">
+          Proteini su proizvodi koji pomažu u poboljšanju sportske performanse i oporavka organizma. Oni nadoknađuju hranljive materije koje možda nedostaju u ishrani i podržavaju zdrav način života. Na našem sajtu pronaći ćete širok izbor kvalitetnih proteina.
+        </p>
+        <a href="proteini.html" class="btn btn-success mt-auto">Detaljnjije>></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="card h-100 d-flex flex-column">
+      <img src="./img/slika6.jpg" class="card-img-top" alt="Tegovi" style="width: 100%; height: 250px; object-fit: cover;">
+      <div class="card-body d-flex flex-column">
+        <h5 class="organic-label">Tegovi</h5>
+        <p class="card-text flex-grow-1">
+          Tegovi su osnovni rekviziti za jačanje mišića i povećanje snage tokom treninga. Bilo da ste početnik ili profesionalac, tegovi omogućavaju različite vrste vežbi za celokupno telo. Kod nas možete izabrati između različitih vrsta i težina tegova koji odgovaraju vašem nivou treninga.
+        </p>
+        <a href="tegovi.html" class="btn btn-success mt-auto">Detaljnjije>></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="card h-100 d-flex flex-column">
+      <img src="./img/dodatnaoprema3.webp" class="card-img-top" alt="Dodatna oprema" style="width: 100%; height: 250px; object-fit: cover;">
+      <div class="card-body d-flex flex-column">
+        <h5 class="organic-label">Dodatna oprema</h5>
+        <p class="card-text flex-grow-1">
+          Dodatna oprema za trening uključuje sve one korisne rekvizite koji olakšavaju i unapređuju vežbanje. To su pojasevi, trake za vežbanje, rukavice, steznici, flašice i mnogi drugi proizvodi. Obezbedite sebi sigurniji i efikasniji trening sa kvalitetnom dodatnom opremom iz naše ponude.
+        </p>
+        <a href="dodatnaOprema.html" class="btn btn-success mt-auto">Detaljnjije>></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <br>
+ <div class="card mb-3">
+ <div class="row g-0">
+ <div class="col-md-4">
+ <img src="./img/images.png" width="300" class="img-fluid rounded-start"
+alt="...">
+ </div>
+ <div class="col-md-8">
+ <div class="card-body">
+ <h5 class="organic-label">Strongero - Elektronska prodavnica
+supemenata i opreme za trening</h5>
+ <p class="card-text">Strongero se bavi prodajom najboljih suplemenata 
+i opreme na trzistu. Siroka ponuda suplemenata za svakoga! Veliki 
+asortiman opreme, od elasticnih traka do tegova. Da li hoces da 
+poboljsas kvalitet treninga uz nasu opremu ili da napravis sopstvenu
+teretanu, na tebi je izbor!
+</p>
+ <a class="btn btn-success" href="onama.html" role="button">Više o
+nama >></a>
+ </div>
+ </div>
+ </div>
+ </div>
+ <br>
+ <div class="card mb-3">
+ <div class="row g-0">
+ <div class="col-md-8">
+ <div class="card-body">
+ <h5 class="organic-label">Popust 15% na celokupan račun
+ukoliko vam je prva narudzbina</h5>
+ <p class="card-text">Strongero te dariva ovog meseca!
+Ukoliko ste prvi put kupovali u Strongeru dobijate popust od 15% </p>
+ <p class="card-text"><small class="text- muted">Ponuda važi
+do kraja meseca!</small></p>
+ </div>
+ </div>
+ <div class="col-md-4">
+ <img src="./img/protein2.jpg" width="500"  class="img-fluid roundedstart" alt="...">
+
+ </div>
+ </div>
+ </div>
+ <br>
+
+
+ </div>
+ </section>
+ <!-- sekcija2 end -->
+
+
+
+
+<!-- portfolio start -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container" style="max-width: 1200px;">
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold mb-3">Portfolio</h1>
+      <p class="fs-5">Pažljivo odabrana oprema i suplementi, proverenog kvaliteta, prilagođeni potrebama profesionalaca i rekreativaca</p>
+      <hr class="mt-4">
+    </div>
+
+    <div class="row g-4">
+      <!-- Prva veća slika -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100" style="height: 500px;">
+          <img src="./img/protein3.webp" class="card-img-top img-fluid h-100" alt="Protein" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Ostale dve slike -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100" style="height: 400px;">
+          <img src="./img/kreatin.webp" class="card-img-top img-fluid h-100" alt="Kreatin" style="object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100" style="height: 400px;">
+          <img src="./img/bcaa3.webp" class="card-img-top img-fluid h-100" alt="BCAA" style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- portfolio end -->
+
+
+
+ 
+
+
+
+<!-- Footer start -->
+ <footer class="futercina">
+ <div class="footer-container">
+ <div class="footer-left">
+ <a href="#">
+ <h1>Strongero</h1>
+ 
+ </a>
+
+ </div>
+ <div class="footer-columns">
+ <div class="footer-column">
+ <h4>Zašto nas podržavate!</h4>
+ <p>Strongero pruza siroku ponudu najboljih suplemenata na trzistu i najkvalitetnije opreme za trening!</p>
+ <a href="onama.html">Procitajte vise...</a>
+ </div>
+ <div class="footer-column">
+ <h4>Info prodavnice</h4>
+ <a href="onama.html">O nama</a>
+ <a href="kontakt.html">Kontakt</a>
+ <a href="faq.html">FAQ</a>
+ <a href="mapasajta.html">Mapa sajta</a>
+ <a href="galerija.html">Galerija</a>
+ <a href="dostava.html">Dostava</a>
+ <a href="pravaKoriscenja.html">Prava koriscenja</a>
+ <a href="privatnost.html">Strana o privatnosti</a>
+ </div>
+ 
+ <div class="footer-column">
+ <h4>Kontakt</h4>
+ <p>Adresa: Vojvode Stepe 283</p>
+ <a href="mailto:miloradis2923@gs.viser.edu.rs"><p style="color:
+white;">Email: miloradis2923@gs.viser.edu.rs</p></a>
+ <a href="tel:+381112471099 "><p style="color:
+white;">Telefon: +381 11 2471 099 </p></a>
+ <a href="tehnickaPodrska.html"><p style="color:
+white;">Tehnicka Podrska</p></a>
+<a href="naciniPlacanja.html"> <p style="color:
+white;">Nacini plaćanja</p> </a>
+ <div class="payment-options">
+ <img src="img/payment.png" alt="Payment Options">
+ </div>
+ </div>
+ </div>
+
+ </div>
+ </footer>
+ <!-- Footer end -->
+
+
+
+
+ <!-- Copyright start -->
+<footer class="futercina py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p>&copy; Strongero, Sva prava zadržana. Designed by Milorad Tadic</p>
+    </div>
+  </footer>
+ <!-- Copyright end -->
+
+
+
+
+
+
+
+</html>

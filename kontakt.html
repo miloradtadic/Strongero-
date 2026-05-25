@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Strongero je prodavnica suplemenata i opereme za trening.
+Nudimo širok asortiman usluga koje obuhvataju prodaju opreme i suplemenata">
+ <meta name="keywords" content="Fruitables, Voce, Povrce, Organski
+proizvodi">
+ <meta name="author" content="Ime i prezime, e-mail">
+ <link rel="stylesheet" href="css/lightbox.min.css">
+ <title>Strongero</title>
+ <link href="./css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/novistil.css">
+ <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+ <script src="./js/bootstrap.bundle.min.js" ></script>
+ <script src="./fontawesome/js/all.min.js"></script>
+ </head>
+
+
+ <body>
+
+
+<!-- Nav start -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+ <div class="container-fluid">
+ <a class="navbar-brand" href="index.html" alt=""> <img class="imgthumbnail" src="./img/images.png" width="100"></a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse"
+id="navbarSupportedContent">
+ <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ <li class="nav-item">
+ <a class="nav-link" aria-current="page"
+href="index.html">Početna</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="onama.html">O nama</a>
+ </li>
+ 
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button"
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Prodavnica
+  </a>
+  <ul class="dropdown-menu">
+    <!-- Suplementi sa podmenijem -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">Suplementi</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="proteini.html">Protein</a></li>
+        <li><a class="dropdown-item" href="kreatin.html">Kreatin</a></li>
+        <li><a class="dropdown-item" href="bcaa.html">Ostali suplementi</a></li>
+      </ul>
+    </li>
+
+    <li><a class="dropdown-item" href="tegovi.html">Tegovi</a></li>
+    <li><a class="dropdown-item" href="opremaBoks.html">Oprema za boks</a></li>
+    <li><a class="dropdown-item" href="opremaTrcanje.html">Oprema za trčanje</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="dodatnaOprema.html">Dodatna oprema</a></li>
+    <li><a class="dropdown-item" href="preporukaProizvoda.html">Preporuka proizvoda</a></li>
+    <li><a class="dropdown-item" href="Cenovnik.pdf" download="">Cenovnik</a></li>
+  </ul>
+</li>
+
+
+
+ <li class="nav-item">
+ <a class="nav-link" href="galerija.html">Galerija</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link active" href="kontakt.html">Kontakt</a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      let submenu = el.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+
+      // zatvori ostale otvorene podmenije
+      el.closest('.dropdown-menu').querySelectorAll('.dropdown-menu.show').forEach(function(openSubmenu) {
+        if(openSubmenu !== submenu) openSubmenu.classList.remove('show');
+      });
+    });
+  });
+});
+</script>
+
+
+ <!-- Nav end -->
+
+<div class="container">
+  <h2 class="display-4">Kontakt</h2>
+  <hr>
+  <div class="row d-flex align-items-stretch">
+    <!-- Leva strana - Mapa -->
+    <div class="col-md-6">
+      <div class="map-container" style="height:100%; min-height:400px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.613013825564!2d20.477456676712794!3d44.76830647959933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f8df8b60e1%3A0xd12e2aad5590e385!2sThe%20School%20of%20Electrical%20and%20Computer%20Engineering%20of%20Applied%20Studies!5e0!3m2!1sen!2srs!4v1728332169174!5m2!1sen!2srs"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <!-- Desna strana - Forma -->
+    <div class="col-md-6 d-flex flex-column">
+      <h2 class="display-4">Pošaljite poruku</h2>
+      <hr>
+      <form id="contact-form" action="izlaznastrana.html" method="post" class="flex-grow-1">
+        <div class="mb-3">
+          <label for="fullname" class="form-label"><i class="fa-solid fa-user"></i> Ime i prezime</label>
+          <input type="text" class="form-control" id="fullname" placeholder="Unesite Vaše ime i prezime">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Unesite Vašu e-mail adresu">
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label"><i class="fa-solid fa-phone"></i> Telefon</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Unesite Vaš br. telefona">
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label"><i class="fas fa-heading"></i> Naslov poruke</label>
+          <input type="text" class="form-control" id="subject" placeholder="Unesite naslov Vaše poruke">
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label"><i class="fas fa-edit"></i> Poruka</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Unesite tekst Vaše poruke"></textarea>
+        </div>
+
+        <div class="d-grid gap-2 mt-auto">
+          <button id="contact-submit-btn" type="submit" class="btn btn-outline-dark"><i class="fas fa-paper-plane"></i> Pošalji</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suplementi | Strongero</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/novistil.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./fontawesome/js/all.min.js"></script>
+  <style>
+    .product-card {
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .modal-header,
+    .modal-footer {
+      background-color: #08c495;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigacija -->
+  <!-- Nav start -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+ <div class="container-fluid">
+ <a class="navbar-brand" href="index.html" alt=""> <img class="imgthumbnail" src="./img/images.png" width="100"></a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse"
+id="navbarSupportedContent">
+ <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ <li class="nav-item">
+ <a class="nav-link active" aria-current="page"
+href="index.html">Početna</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="onama.html">O nama</a>
+ </li>
+ 
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button"
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Prodavnica
+  </a>
+  <ul class="dropdown-menu">
+    <!-- Suplementi sa podmenijem -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">Suplementi</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="proteini.html">Protein</a></li>
+        <li><a class="dropdown-item" href="kreatin.html">Kreatin</a></li>
+        <li><a class="dropdown-item" href="bcaa.html">Ostali suplementi</a></li>
+      </ul>
+    </li>
+
+    <li><a class="dropdown-item" href="tegovi.html">Tegovi</a></li>
+    <li><a class="dropdown-item" href="opremaBoks.html">Oprema za boks</a></li>
+    <li><a class="dropdown-item" href="opremaTrcanje.html">Oprema za trčanje</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="dodatnaOprema.html">Dodatna oprema</a></li>
+    <li><a class="dropdown-item" href="preporukaProizvoda.html">Preporuka proizvoda</a></li>
+    <li><a class="dropdown-item" href="Cenovnik.pdf" download="">Cenovnik</a></li>
+  </ul>
+</li>
+
+
+
+ <li class="nav-item">
+ <a class="nav-link" href="galerija.html">Galerija</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="kontakt.html">Kontakt</a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      let submenu = el.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+
+      // zatvori ostale otvorene podmenije
+      el.closest('.dropdown-menu').querySelectorAll('.dropdown-menu.show').forEach(function(openSubmenu) {
+        if(openSubmenu !== submenu) openSubmenu.classList.remove('show');
+      });
+    });
+  });
+});
+</script>
+
+
+ <!-- Nav end -->
+
+  <!-- Proizvodi -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- 10 proizvoda -->
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/whey.webp" class="card-img-top" alt="Whey Protein">
+          <div class="card-body">
+            <h5 class="card-title">Whey Protein | Cena: 9000.00rsd</h5>
+            <p class="card-text">Brzo apsorbujući protein za oporavak i rast mišića.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Whey Protein')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/casein.webp" class="card-img-top" alt="Casein Protein">
+          <div class="card-body">
+            <h5 class="card-title">Casein Protein | Cena: 12 000.00rsd</h5>
+            <p class="card-text">Sporije se oslobađa, idealan za noćni oporavak.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Casein Protein')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/kreatinmonohidat.jpg" class="card-img-top" alt="Kreatin Monohidrat">
+          <div class="card-body">
+            <h5 class="card-title">Kreatin Monohidrat | Cena: 2350.00rsd</h5>
+            <p class="card-text">Povećava snagu i eksplozivnost u treningu.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Kreatin Monohidrat')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/kreatinhcl.jpg" class="card-img-top" alt="Kreatin HCL">
+          <div class="card-body">
+            <h5 class="card-title">Kreatin HCL | Cena: 2500.00rsd</h5>
+            <p class="card-text">Poboljšana apsorpcija i bez zadržavanja vode.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Kreatin HCL')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/gainer.jpg" class="card-img-top" alt="Gainer">
+          <div class="card-body">
+            <h5 class="card-title">Gainer | Cena: 3000.00rsd</h5>
+            <p class="card-text">Dodatne kalorije i proteini za masu.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Gainer')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/BCAA_GlutamineZero_PeachIceTea_480g_1l.webp" class="card-img-top" alt="BCAA">
+          <div class="card-body">
+            <h5 class="card-title">BCAA | Cena: 2300.00rsd</h5>
+            <p class="card-text">Aminokiseline za oporavak i smanjenje umora.</p>
+            <button class="btn btn-success" onclick="openOrderModal('BCAA')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/preworkout.avif" class="card-img-top" alt="Pre-Workout">
+          <div class="card-body">
+            <h5 class="card-title">Pre-Workout | Cena: 2800.00rsd</h5>
+            <p class="card-text">Energetski suplement za intenzivne treninge.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Pre-Workout')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/vitamini.avif" class="card-img-top" alt="Vitamini">
+          <div class="card-body">
+            <h5 class="card-title">Vitamini | Cena: 1800.00rsd</h5>
+            <p class="card-text">Podrška imunitetu i zdravlju.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Vitamini')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/minerali.avif" class="card-img-top" alt="Minerali">
+          <div class="card-body">
+            <h5 class="card-title">Minerali | Cena: 1300.00rsd</h5>
+            <p class="card-text">Esencijalni minerali za svakodnevne potrebe.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Minerali')">Poruči</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-card">
+        <div class="card">
+          <img src="./img/omega3.avif" class="card-img-top" alt="Omega 3">
+          <div class="card-body">
+            <h5 class="card-title">Omega 3 | Cena: 1200.00rsd</h5>
+            <p class="card-text">Podrška srcu i mozgu.</p>
+            <button class="btn btn-success" onclick="openOrderModal('Omega 3')">Poruči</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal - Porudzbina -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel">Poručivanje proizvoda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contact-form" action="izlaznastrana.html" method="post">
+          <input type="hidden" id="productName" name="product">
+          <div class="mb-3">
+            <label for="ime" class="form-label">Ime</label>
+            <input type="text" class="form-control" id="ime" required>
+          </div>
+          <div class="mb-3">
+            <label for="prezime" class="form-label">Prezime</label>
+            <input type="text" class="form-control" id="prezime" required>
+          </div>
+          <div class="mb-3">
+            <label for="adresa" class="form-label">Adresa</label>
+            <input type="text" class="form-control" id="adresa" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefon" class="form-label">Broj telefona</label>
+            <input type="tel" class="form-control" id="telefon" required>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="submitOrder()">Pošalji porudžbinu</button>
+        </form>
+
+        <!-- Dodatna poruka o uspešnoj porudžbini -->
+<div id="successMessage" style="display:none; margin-top:15px; color:green; font-weight:bold;">
+  ✅ Vaša porudžbina je uspešno poslata!
+</div>
+
+<script>
+  function openOrderModal(product) {
+    document.getElementById("productName").value = product;
+    document.getElementById("successMessage").style.display = "none"; // sakrij poruku kad se modal otvori
+    document.getElementById('contact-form').reset(); // očisti formu
+    var orderModal = new bootstrap.Modal(document.getElementById('orderModal'));
+    orderModal.show();
+  }
+
+  function submitOrder() {
+    const fields = ['ime', 'prezime', 'adresa', 'email', 'telefon'];
+    let valid = true;
+    fields.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el.value.trim()) {
+        el.classList.add('is-invalid');
+        valid = false;
+      } else {
+        el.classList.remove('is-invalid');
+      }
+    });
+
+    if (valid) {
+      alert('Uspešno ste naručili proizvod! Hvala na poverenju.');
+      document.getElementById("successMessage").style.display = "block"; // prikaži poruku
+    } else {
+      alert('Molimo popunite sva polja.');
+    }
+  }
+</script>
+
+
+</body>
+</html>

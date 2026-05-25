@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preporuka proizvoda | Strongero</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/novistil.css" />
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./fontawesome/js/all.min.js"></script>
+  <style>
+    .product-recommendation {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .product-recommendation img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .product-recommendation p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nav start -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+ <div class="container-fluid">
+ <a class="navbar-brand" href="index.html" alt=""> <img class="imgthumbnail" src="./img/images.png" width="100"></a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse"
+id="navbarSupportedContent">
+ <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ <li class="nav-item">
+ <a class="nav-link" aria-current="page"
+href="index.html">Početna</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="onama.html">O nama</a>
+ </li>
+ 
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle active" href="#" role="button"
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Prodavnica
+  </a>
+  <ul class="dropdown-menu">
+    <!-- Suplementi sa podmenijem -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">Suplementi</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="proteini.html">Protein</a></li>
+        <li><a class="dropdown-item" href="kreatin.html">Kreatin</a></li>
+        <li><a class="dropdown-item" href="bcaa.html">Ostali suplementi</a></li>
+      </ul>
+    </li>
+
+    <li><a class="dropdown-item" href="tegovi.html">Tegovi</a></li>
+    <li><a class="dropdown-item" href="opremaBoks.html">Oprema za boks</a></li>
+    <li><a class="dropdown-item" href="opremaTrcanje.html">Oprema za trčanje</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="dodatnaOprema.html">Dodatna oprema</a></li>
+    <li><a class="dropdown-item" href="preporukaProizvoda.html">Preporuka proizvoda</a></li>
+    <li><a class="dropdown-item" href="Cenovnik.pdf" download="">Cenovnik</a></li>
+  </ul>
+</li>
+
+
+
+ <li class="nav-item">
+ <a class="nav-link" href="galerija.html">Galerija</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="kontakt.html">Kontakt</a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      let submenu = el.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+
+      // zatvori ostale otvorene podmenije
+      el.closest('.dropdown-menu').querySelectorAll('.dropdown-menu.show').forEach(function(openSubmenu) {
+        if(openSubmenu !== submenu) openSubmenu.classList.remove('show');
+      });
+    });
+  });
+});
+</script>
+
+
+ <!-- Nav end -->
+
+  <!-- Preporuke proizvoda -->
+  <div class="container mt-5">
+    <h2 class="mb-4 text-center">Preporučeni proizvodi</h2>
+    <div class="row">
+
+      <!-- Protein -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/whey.webp" alt="Whey Protein" />
+        <h5>Whey Protein</h5>
+        <p>
+          Whey protein je idealan za brzi oporavak i rast mišića nakon treninga. Bogat je aminokiselinama koje pomažu izgradnju mišićnog tkiva. Odličan je izbor za svakoga ko želi poboljšati performanse.
+        </p>
+      </div>
+
+      <!-- Kreatin -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/kreatinmonohidat.jpg" alt="Kreatin" />
+        <h5>Kreatin</h5>
+        <p>
+          Kreatin pomaže povećanju snage i izdržljivosti tokom intenzivnih vežbi. Idealno je suplement za sportiste koji žele eksplozivnost i jači trening. Siguran je i naučno potvrđen suplement.
+        </p>
+      </div>
+
+      <!-- BCAA -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/bcaa.jpg" alt="BCAA" />
+        <h5>BCAA</h5>
+        <p>
+          BCAA su razgranati aminokiseline koje pomažu smanjenju umora i ubrzavaju oporavak. Idealne su za sportiste koji vežbaju dugotrajno i intenzivno. Podržavaju očuvanje mišićne mase tokom dijete.
+        </p>
+      </div>
+
+      <!-- Omega 3 -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/omega3.avif" alt="Omega 3" />
+        <h5>Omega 3</h5>
+        <p>
+          Omega 3 masne kiseline doprinose zdravlju srca i mozga. Pomažu u smanjenju upala i održavanju fleksibilnosti zglobova. Važne su za opštu dobrobit i sportske rezultate.
+        </p>
+      </div>
+
+      <!-- Teg - Bucice -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/bucice10kg.webp" alt="Bučice" />
+        <h5>Bučice</h5>
+        <p>
+          Bučice su osnovni rekvizit za vežbe snage i izdržljivosti. Idealne su za izolacione vežbe i oblikovanje mišića. Prilagođene su svim nivoima vežbača.
+        </p>
+      </div>
+
+      <!-- Teg - Tegovi sa pločama -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/tegovi4.jpg" alt="Tegovi sa pločama" />
+        <h5>Tegovi sa pločama</h5>
+        <p>
+          Tegovi sa pločama omogućavaju postepeno povećanje težine. Koriste se za slobodne vežbe i kombinacije pokreta. Odlični su za razvoj snage i mišićne mase.
+        </p>
+      </div>
+
+      <!-- Teg - Veliki tegovi (šipke i tegovi) -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/tegovi2.webp" alt="Veliki tegovi i šipke" />
+        <h5>Veliki tegovi i šipke</h5>
+        <p>
+          Veliki tegovi sa šipkama su osnova za vežbe poput čučnja i mrtvog dizanja. Pomažu u razvoju ukupne snage i mišićne mase. Neophodni su za ozbiljan trening snage.
+        </p>
+      </div>
+
+      <!-- Dodatna oprema - Rukavice -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/rukavice.jpg" alt="Rukavice za teretanu" />
+        <h5>Rukavice za teretanu</h5>
+        <p>
+          Rukavice štite dlanove i poboljšavaju hvat. Smanjuju rizik od žuljeva i povreda. Neophodne su za veće težine i intenzivne treninge.
+        </p>
+      </div>
+
+      <!-- Dodatna oprema - Steznik za zglob -->
+      <div class="col-md-4 product-recommendation">
+        <img src="./img/steznik.jpg" alt="Steznik za zglob" />
+        <h5>Steznik za zglob</h5>
+        <p>
+          Steznik pruža dodatnu stabilnost i podršku zglobovima. Koristi se kod povreda ili prevencije. Pomaže u sigurnijem izvođenju vežbi.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

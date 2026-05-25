@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Strongero je prodavnica suplemenata i opereme za trening.
+Nudimo širok asortiman usluga koje obuhvataju prodaju opreme i suplemenata">
+ <meta name="keywords" content="Fruitables, Voce, Povrce, Organski
+proizvodi">
+ <meta name="author" content="Ime i prezime, e-mail">
+ <link rel="stylesheet" href="css/lightbox.min.css">
+ <title>Strongero</title>
+ <link href="./css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/novistil.css">
+ <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+ <script src="./js/bootstrap.bundle.min.js" ></script>
+ <script src="./fontawesome/js/all.min.js"></script>
+ </head>
+
+
+ <body>
+
+
+<!-- Nav start -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+ <div class="container-fluid">
+ <a class="navbar-brand" href="index.html" alt=""> <img class="imgthumbnail" src="./img/images.png" width="100"></a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse"
+id="navbarSupportedContent">
+ <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ <li class="nav-item">
+ <a class="nav-link" aria-current="page"
+href="index.html">Početna</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="onama.html">O nama</a>
+ </li>
+ 
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button"
+     data-bs-toggle="dropdown" aria-expanded="false">
+    Prodavnica
+  </a>
+  <ul class="dropdown-menu">
+    <!-- Suplementi sa podmenijem -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#">Suplementi</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="proteini.html">Protein</a></li>
+        <li><a class="dropdown-item" href="kreatin.html">Kreatin</a></li>
+        <li><a class="dropdown-item" href="bcaa.html">Ostali suplementi</a></li>
+      </ul>
+    </li>
+
+    <li><a class="dropdown-item" href="tegovi.html">Tegovi</a></li>
+    <li><a class="dropdown-item" href="opremaBoks.html">Oprema za boks</a></li>
+    <li><a class="dropdown-item" href="opremaTrcanje.html">Oprema za trčanje</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="dodatnaOprema.html">Dodatna oprema</a></li>
+    <li><a class="dropdown-item" href="preporukaProizvoda.html">Preporuka proizvoda</a></li>
+    <li><a class="dropdown-item" href="Cenovnik.pdf" download="">Cenovnik</a></li>
+  </ul>
+</li>
+
+
+
+ <li class="nav-item">
+ <a class="nav-link" href="galerija.html">Galerija</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="kontakt.html">Kontakt</a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      let submenu = el.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+
+      // zatvori ostale otvorene podmenije
+      el.closest('.dropdown-menu').querySelectorAll('.dropdown-menu.show').forEach(function(openSubmenu) {
+        if(openSubmenu !== submenu) openSubmenu.classList.remove('show');
+      });
+    });
+  });
+});
+</script>
+
+
+ <!-- Nav end -->
+
+  <h2 class="display-4"> Često postavljena pitanja </h2>
+      <hr>
+
+ <div class=”row”>
+	<div class=”col-12”>
+		<div class="accordion" id="accordionExample">
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1. Koji suplementi su najbolji za početnike?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Za početnike se preporučuju proteini (npr. whey protein), kreatin i multivitamini. Ovi suplementi pomažu u oporavku mišića, povećanju snage i nadoknadi nutrijenata.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2. Da li su suplementi bezbedni za svakodnevnu upotrebu?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Da, ako se koriste u preporučenim dozama i uz konsultaciju sa stručnjakom ili trenerom. Uvek pratite uputstvo sa pakovanja i izbegavajte prekoračenje doza.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        3. Kako da izaberem pravu opremu za kućni trening?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Preporučujemo da krenete sa osnovnim stvarima poput tegića, strunjače, elastičnih traka i eventualno klupe ili kettlebell tegova. Vaš izbor zavisi od ciljeva i prostora kojim raspolažete.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        4. Koliko brzo mogu da vidim rezultate uz korišćenje suplemenata?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Rezultati zavise od ishrane, treninga i genetike. Suplementi ubrzavaju oporavak i rast mišića, ali nisu zamena za rad i disciplinu. Prvi rezultati se obično vide nakon 4–6 nedelja.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        5. Da li šaljete robu širom Srbije?
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Da, vršimo isporuku na teritoriji cele Srbije putem kurirskih službi. Isporuka obično stiže u roku od 1 do 3 radna dana.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        6. Mogu li vratiti proizvod ako nisam zadovoljan?
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Naravno. Imate pravo na povraćaj robe u roku od 14 dana od prijema, pod uslovom da je proizvod nekorišćen i u originalnom pakovanju.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+        7. Kako da znam koji protein mi najviše odgovara?
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Ako želite brzo varenje nakon treninga, whey protein je idealan. Za sporiju apsorpciju (npr. pre spavanja) preporučuje se casein. Ako ste vegan, birajte biljne proteine (npr. grašak, pirinač).
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        8. Da li nudite popuste ili akcije?
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Da, redovno imamo sezonske akcije i popuste za članove našeg newslettera. Pratite našu stranicu ili se prijavite da biste prvi saznali o sniženjima.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+        9. Da li prodajete originalne brendove suplemenata?
+      </button>
+    </h2>
+    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Da, svi proizvodi koje nudimo su originalni i dolaze direktno od ovlašćenih distributera i proizvođača.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+        10. Mogu li lično preuzeti porudžbinu?
+      </button>
+    </h2>
+    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Ukoliko ste iz [navedite grad, npr. Beograda], omogućavamo lično preuzimanje u našem prodajnom objektu. Tačnu lokaciju i radno vreme možete pronaći u sekciji Kontakt.
+      </div>
+    </div>
+  </div>
+
+
+  
+</div>
+
+	</div>
+</div>
+
+
+ </body>
+</html>
